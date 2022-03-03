@@ -73,7 +73,9 @@ function createMaze(dimension){
 }
 
 function clearDOM(){
-    document.body.innerHTML = "";
+    while (document.body.firstChild) {
+        document.body.removeChild(document.body.firstChild);
+    }
 }
 
 createMaze(6);
