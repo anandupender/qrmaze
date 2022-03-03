@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <img id="image" src="" alt="">
+    <img id="image" src="arrow.svg" alt="">
 
     <script>
         const queryString = window.location.search;
@@ -17,10 +17,38 @@
         const image = document.querySelector("#image");
 
         if(direction == "north"){
-            image.src="north.svg";
+            image.style.transform = "rotate(0deg)";
+        }else if(direction == "northeast"){
+            image.style.transform = "rotate(45deg)";
+        }else if(direction == "northwest"){
+            image.style.transform = "rotate(-45deg)";
+        }else if(direction == "south"){
+            image.style.transform = "rotate(180deg)";
+        }else if(direction == "southeast"){
+            image.style.transform = "rotate(135deg)";
+        }else if(direction == "southwest"){
+            image.style.transform = "rotate(225deg)";
+        }else if(direction == "east"){
+            image.style.transform = "rotate(90deg)";
+        }else if(direction == "west"){
+            image.style.transform = "rotate(270deg)";
         }
 
     </script>
+
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        img{
+            width: 60vw;
+        }
+    </style>
     
 </body>
 </html>
