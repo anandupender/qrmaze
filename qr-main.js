@@ -72,4 +72,8 @@ function createMaze(dimension){
     }
 }
 
+function clearDOM(){
+    document.body.innerHTML = "";
+}
+
 createMaze(6);
