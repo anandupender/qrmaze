@@ -1,5 +1,5 @@
 var padding = 10;
-var baseURL = "https://anandupender.github.io/qrmaze/arrow?direction=";
+var baseURL = "https://theqrmaze.netlify.app/arrow?direction=";
 
 var targetX;
 var targetY;
